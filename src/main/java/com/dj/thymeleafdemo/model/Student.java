@@ -6,16 +6,26 @@ public class Student {
     private String lastName;
     private String country;
     private String favoriteLanguage;
+    private String system;
 
     public Student() {
         // no-arg constructor
     }
 
-    public Student(String firstName, String lastName, String country, String favoriteLanguage) {
+    public Student(String firstName, String lastName, String country, String favoriteLanguage, String system) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.country = country;
         this.favoriteLanguage = favoriteLanguage;
+        this.system = system;
+    }
+
+    public String getSystem() {
+        return system;
+    }
+
+    public void setSystem(String system) {
+        this.system = system;
     }
 
     public String getFirstName() {
