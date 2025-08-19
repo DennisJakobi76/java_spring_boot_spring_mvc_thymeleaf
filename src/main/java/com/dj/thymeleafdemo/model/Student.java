@@ -1,31 +1,25 @@
 package com.dj.thymeleafdemo.model;
 
+import java.util.List;
+
 public class Student {
 
     private String firstName;
     private String lastName;
     private String country;
     private String favoriteLanguage;
-    private String system;
+    private List<String> systems;
 
     public Student() {
         // no-arg constructor
     }
 
-    public Student(String firstName, String lastName, String country, String favoriteLanguage, String system) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.country = country;
-        this.favoriteLanguage = favoriteLanguage;
-        this.system = system;
+    public List<String> getSystems() {
+        return systems;
     }
 
-    public String getSystem() {
-        return system;
-    }
-
-    public void setSystem(String system) {
-        this.system = system;
+    public void setSystems(List<String> systems) {
+        this.systems = systems;
     }
 
     public String getFirstName() {
